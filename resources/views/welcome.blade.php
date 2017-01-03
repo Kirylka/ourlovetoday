@@ -75,7 +75,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Our Love Today
+                    Our Love Today<br>
+                    Kiryl + Lena = ♡
                 </div>
 
             </div>
