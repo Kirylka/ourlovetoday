@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Phrases</div>
+                    <div class="panel-heading">Слова любви</div>
                     <div class="panel-body">
 
                         <a href="{{ url('/phrases/create') }}" class="btn btn-primary btn-xs" title="Add New Phrase"><span class="glyphicon glyphicon-plus" aria-hidden="true"/></a>
@@ -15,16 +15,14 @@
                             <table class="table table-borderless">
                                 <thead>
                                     <tr>
-                                        <th>ID</th><th> Title </th><th> Content </th><th> From </th><th>Actions</th>
+                                        <th> Название </th><th> Текст </th><th> От кого </th><th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($phrases as $item)
                                     <tr>
-                                        <td>{{ $item->id }}</td>
                                         <td>{{ $item->title }}</td><td>{{ $item->content }}</td><td>{{ $item->from }}</td>
                                         <td>
-                                            <a href="{{ url('/phrases/' . $item->id) }}" class="btn btn-success btn-xs" title="View Phrase"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"/></a>
                                             <a href="{{ url('/phrases/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit Phrase"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
                                             {!! Form::open([
                                                 'method'=>'DELETE',
@@ -35,7 +33,7 @@
                                                         'type' => 'submit',
                                                         'class' => 'btn btn-danger btn-xs',
                                                         'title' => 'Delete Phrase',
-                                                        'onclick'=>'return confirm("Confirm delete?")'
+                                                        'onclick'=>'return confirm("Удалить слова любви?! Как же так?")'
                                                 )) !!}
                                             {!! Form::close() !!}
                                         </td>

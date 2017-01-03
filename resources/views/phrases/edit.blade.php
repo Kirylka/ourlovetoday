@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Edit Phrase {{ $phrase->id }}</div>
+                    <div class="panel-heading">Редактировать слова любви № {{ $phrase->id }}</div>
                     <div class="panel-body">
 
                         @if ($errors->any())
@@ -23,7 +23,7 @@
                             'files' => true
                         ]) !!}
 
-                        @include ('phrases.form', ['submitButtonText' => 'Update'])
+                        @include ('phrases.form', ['submitButtonText' => 'Обновить'])
 
                         {!! Form::close() !!}
 
