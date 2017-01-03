@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-	$phrase = DB::table('phrases')->get()->first();
+	$phrase = DB::table('phrases')->get()->last();
 	return view('welcome')->with(['phrase' => $phrase]);
 });
 

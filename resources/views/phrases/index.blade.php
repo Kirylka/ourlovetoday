@@ -33,11 +33,11 @@
                                         </td>
                                         <td>
                                             <a href="{{ url('/phrases/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit Phrase"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
-                                            Т {!! Form::open([
-                                                'method'=>'DELETE',
-                                                'url' => ['/phrases', $item->id],
-                                                'style' => 'display:inline'
-                                            ]) !!}
+                                            {!! Form::open([
+                                               'method'=>'DELETE',
+                                               'url' => ['/phrases', $item->id],
+                                               'style' => 'display:inline'
+                                           ]) !!}
                                                 {!! Form::button('<span class="glyphicon glyphicon-trash" aria-hidden="true" title="Delete Phrase" />', array(
                                                         'type' => 'submit',
                                                         'class' => 'btn btn-danger btn-xs',
