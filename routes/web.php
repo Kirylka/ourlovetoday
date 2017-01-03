@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$phrase = DB::table('phrases')->get()->first();
+	return view('welcome')->with(['phrase' => $phrase]);
 });
 
 

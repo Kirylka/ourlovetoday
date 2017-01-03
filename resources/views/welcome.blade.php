@@ -9,9 +9,33 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+              type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css">
 
         <!-- Styles -->
         <style>
+            .blockquote {
+                background: #f9f9f9;
+                opacity: 0.7;
+                margin: 3.5em 10px;
+                padding: 2.5em 10px;
+
+            }
+
+            .quote {
+                color: #777674;
+                content: open-quote;
+                font-size: 2em;
+                line-height: 0.1em;
+                margin-right: 0.25em;
+                vertical-align: -0.1em;
+                display: inline;
+            }
+
+            .blockquote p {
+                display: inline;
+            }
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -72,7 +96,11 @@
                     Our Love Today<br>
                     Kiryl + Lena = ♡
                 </div>
-
+                <div class="col-xs-12 well message blockquote">
+                    <i class="fa fa-quote-left quote"></i>&nbsp<p>{{$phrase->content}}</p>
+                    <br/><br/>
+                    <p style="display: block;">{{$phrase->from ? 'Кирилл' : 'Лена'}}</p>
+                </div>
             </div>
         </div>
     </body>

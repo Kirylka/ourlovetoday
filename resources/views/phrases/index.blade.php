@@ -15,13 +15,16 @@
                             <table class="table table-borderless">
                                 <thead>
                                     <tr>
-                                        <th> Название </th><th> Текст </th><th> От кого </th><th></th>
+                                        <th> Текст</th>
+                                        <th> От кого</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($phrases as $item)
                                     <tr>
-                                        <td>{{ $item->title }}</td><td>{{ $item->content }}</td><td>
+                                        <td>{{ $item->content }}</td>
+                                        <td>
                                             @if ($item->from) от Кирилла
                                             @endif
 
@@ -30,7 +33,7 @@
                                         </td>
                                         <td>
                                             <a href="{{ url('/phrases/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs" title="Edit Phrase"><span class="glyphicon glyphicon-pencil" aria-hidden="true"/></a>
-                                            {!! Form::open([
+                                            Т {!! Form::open([
                                                 'method'=>'DELETE',
                                                 'url' => ['/phrases', $item->id],
                                                 'style' => 'display:inline'
