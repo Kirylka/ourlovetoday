@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/howiloveyou', function () {
+    return view('welcome');
+});
+
+Route::resource('phrases', 'PhrasesController');
