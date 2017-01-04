@@ -93,7 +93,6 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Our Love Today<br>
                     Kiryl + Lena = ♡
                 </div>
                 <div class="col-xs-12 well message blockquote">
