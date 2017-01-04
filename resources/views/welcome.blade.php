@@ -24,7 +24,7 @@
             }
 
             .quote {
-                color: #777674;
+                color: #3b8445;
                 content: open-quote;
                 font-size: 2em;
                 line-height: 0.1em;
