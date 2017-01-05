@@ -96,7 +96,7 @@
                     Kiryl + Lena = ♡
                 </div>
                 <div class="col-xs-12 well message blockquote">
-                    <i class="fa fa-quote-left quote"></i>&nbsp<p style="font-size: 14px;">{{$phrase->content}}</p>
+                    <i class="fa fa-quote-left quote"></i>&nbsp<p style="font-size: 24px;">{{$phrase->content}}</p>
                     <br/><br/>
                     <p style="display: block;">{{$phrase->from ? 'Кирилл' : 'Лена'}}</p>
                 </div>
