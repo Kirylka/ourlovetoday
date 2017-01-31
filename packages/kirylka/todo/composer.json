@@ -1,0 +1,12 @@
+{
+    "name": "kirylka/todo",
+    "description": "This package provides the basic functionality for todo list",
+    "authors": [
+        {
+            "name": "Kiryl Anoshka",
+            "email": "kiryl.anoshko@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
