@@ -24,7 +24,7 @@
             }
 
             .quote {
-                color: #777674;
+                color: #3b8445;
                 content: open-quote;
                 font-size: 2em;
                 line-height: 0.1em;
@@ -96,7 +96,7 @@
                     Kiryl + Lena = ♡
                 </div>
                 <div class="col-xs-12 well message blockquote">
-                    <i class="fa fa-quote-left quote"></i>&nbsp<p>{{$phrase->content}}</p>
+                    <i class="fa fa-quote-left quote"></i>&nbsp<p style="font-size: 24px;">{{$phrase->content}}</p>
                     <br/><br/>
                     <p style="display: block;">{{$phrase->from ? 'Кирилл' : 'Лена'}}</p>
                 </div>
